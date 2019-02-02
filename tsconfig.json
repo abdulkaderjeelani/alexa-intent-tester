@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "esnext",
+    "lib": ["dom", "es5", "es6", "es7", "es2018", "esnext"],
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*", "lib/types/*"]
+    }
+  },
+  "include": ["lib/**/*"],
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist",
+    "scripts",
+    "acceptance-tests",
+    "src/config/environment2.ts",
+    "register-ts-config-path.ts",
+    "copyStaticAssets.ts",
+    "webpack",
+    "jest"
+  ]
+}
